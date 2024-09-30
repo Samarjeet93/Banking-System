@@ -30,13 +30,13 @@ public class EmailValid {
 	}
 	
 	
-	/*
+
 	public static void main(String[] args){
 		EmailValid obj=new EmailValid();
 		
 		//obj.main(); //passing account number
 	}
-	*/
+
 	
 
 }
