@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-public class Validation
+public class ValidationCheck
 {
 	private static Scanner sc = new Scanner(System.in);
 	
@@ -28,7 +28,7 @@ public class Validation
     		return true;
     }
     
-    static boolean emilcheck(String email)
+    static boolean emailcheck(String email)
     {
     	String emailpattern = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"; 
     			//"^(\\w)+@(\\w+\\.)(\\w+\\.)?[A-Za-z]+$";
@@ -115,7 +115,7 @@ public class Validation
 		   boolean mobnovalidation = phoneCheck(Cphone);
 		   boolean aadharvalidation = aadharcheck(Adhar);
 		   boolean Panvalidation = pancheck(PAN);
-		   boolean emailvalidation = emilcheck(Cmail);
+		   boolean emailvalidation = emailcheck(Cmail);
 		   
 		   
 		   if (namevalidation && emailvalidation && mobnovalidation && aadharvalidation && Panvalidation)
